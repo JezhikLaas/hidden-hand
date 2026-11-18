@@ -1,0 +1,38 @@
+{
+  "id": "hidden-hand",
+  "title": "Hidden Hand",
+  "description": "Let the GM secretly decide dice results. One click on a GM-only scene control and every roll (the GM's and, optionally, the players') waits for the GM to confirm or change the dice; another click and everything is normal again. Leaves no trace in chat messages. Daggerheart-aware (Hope, Fear, Advantage dice).",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.370",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Jözhik"
+    }
+  ],
+  "license": "LICENSE",
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/hidden-hand.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}

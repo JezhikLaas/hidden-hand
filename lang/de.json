@@ -1,0 +1,38 @@
+{
+  "HIDDEN_HAND": {
+    "Settings": {
+      "includePlayers": {
+        "name": "Auch Spielerwürfe bestimmen",
+        "hint": "Solange die verborgene Hand aktiv ist, warten auch die Würfe der Spieler auf dich. Der Spieler sieht kein Fenster, nur eine kurze Verzögerung bis zu deiner Bestätigung."
+      },
+      "playerTimeout": {
+        "name": "Wartezeit bei Spielerwürfen (Sekunden)",
+        "hint": "Hast du einen Spielerwurf bis dahin nicht entschieden, behalten die Würfel ihr echtes Ergebnis."
+      }
+    },
+    "Control": {
+      "title": "Verborgene Hand: Würfelergebnisse bestimmen"
+    },
+    "Dialog": {
+      "title": "Verborgene Hand",
+      "titleUser": "Verborgene Hand – {name}",
+      "yourRoll": "Dein Wurf",
+      "natural": "Tatsächlich gewürfelt",
+      "min": "Alle Würfel auf 1",
+      "max": "Alle Würfel auf Maximum",
+      "total": "Summe",
+      "apply": "Übernehmen"
+    },
+    "Kinds": {
+      "hope": "Hoffnung",
+      "fear": "Furcht",
+      "advantage": "Vorteil",
+      "disadvantage": "Nachteil"
+    },
+    "Duality": {
+      "hope": "Mit Hoffnung",
+      "fear": "Mit Furcht",
+      "critical": "Kritisch"
+    }
+  }
+}

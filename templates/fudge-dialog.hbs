@@ -1,0 +1,58 @@
+<div class="hidden-hand__root">
+  <header class="hidden-hand__header">
+    <span class="hidden-hand__user" style="--hidden-hand-user-color: {{userColor}}">
+      {{#if isSelf}}{{localize "HIDDEN_HAND.Dialog.yourRoll"}}{{else}}{{userName}}{{/if}}
+    </span>
+    {{#if title}}<span class="hidden-hand__title">{{title}}</span>{{/if}}
+    <code class="hidden-hand__formula">{{formula}}</code>
+  </header>
+
+  {{#each terms}}
+  <fieldset class="hidden-hand__term" data-kind="{{kind}}">
+    <legend>{{sign}}{{label}}{{#if flavor}} <span class="hidden-hand__flavor">({{flavor}})</span>{{/if}}
+      {{#if kind}}<span class="hidden-hand__expression">{{expression}}</span>{{/if}}
+    </legend>
+    <div class="hidden-hand__dice">
+      {{#each dice}}
+      <label class="hidden-hand__die">
+        <input type="number" min="1" max="{{../faces}}" step="1" value="{{value}}" required
+               data-term="{{../index}}" data-die="{{index}}" {{#if autofocus}}autofocus{{/if}}
+               aria-label="{{../label}} {{index}}">
+        <span class="hidden-hand__natural" data-tooltip="HIDDEN_HAND.Dialog.natural">{{natural}}</span>
+      </label>
+      {{/each}}
+      <span class="hidden-hand__quick">
+        <button type="button" data-action="setMin" data-term="{{index}}"
+                data-tooltip="HIDDEN_HAND.Dialog.min" aria-label="{{localize "HIDDEN_HAND.Dialog.min"}}">
+          <i class="fa-solid fa-angles-down" inert></i>
+        </button>
+        <button type="button" data-action="setMax" data-term="{{index}}"
+                data-tooltip="HIDDEN_HAND.Dialog.max" aria-label="{{localize "HIDDEN_HAND.Dialog.max"}}">
+          <i class="fa-solid fa-angles-up" inert></i>
+        </button>
+      </span>
+    </div>
+  </fieldset>
+  {{/each}}
+
+  <div class="hidden-hand__preview">
+    <span>{{localize "HIDDEN_HAND.Dialog.total"}}: <strong data-preview="total">{{preview.totalText}}</strong></span>
+    {{#if hasDuality}}
+    <strong class="hidden-hand__duality" data-preview="duality" data-outcome="{{preview.duality}}">{{preview.dualityLabel}}</strong>
+    {{/if}}
+  </div>
+
+  {{#if hasDuality}}
+  <div class="hidden-hand__duality-buttons">
+    <button type="button" data-action="duality" data-outcome="hope">{{localize "HIDDEN_HAND.Duality.hope"}}</button>
+    <button type="button" data-action="duality" data-outcome="fear">{{localize "HIDDEN_HAND.Duality.fear"}}</button>
+    <button type="button" data-action="duality" data-outcome="critical">{{localize "HIDDEN_HAND.Duality.critical"}}</button>
+  </div>
+  {{/if}}
+
+  <footer class="form-footer">
+    <button type="submit">
+      <i class="fa-solid fa-check" inert></i> {{localize "HIDDEN_HAND.Dialog.apply"}}
+    </button>
+  </footer>
+</div>

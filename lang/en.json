@@ -1,0 +1,38 @@
+{
+  "HIDDEN_HAND": {
+    "Settings": {
+      "includePlayers": {
+        "name": "Also decide the players' rolls",
+        "hint": "While the hidden hand is on, the players' rolls wait for you as well. The player sees no dialog, only a short delay until you confirm."
+      },
+      "playerTimeout": {
+        "name": "Waiting time for player rolls (seconds)",
+        "hint": "If you have not decided a player's roll within this time, the dice keep what they actually rolled."
+      }
+    },
+    "Control": {
+      "title": "Hidden Hand: decide dice results"
+    },
+    "Dialog": {
+      "title": "Hidden Hand",
+      "titleUser": "Hidden Hand – {name}",
+      "yourRoll": "Your roll",
+      "natural": "Actually rolled",
+      "min": "All dice to 1",
+      "max": "All dice to maximum",
+      "total": "Total",
+      "apply": "Apply"
+    },
+    "Kinds": {
+      "hope": "Hope",
+      "fear": "Fear",
+      "advantage": "Advantage",
+      "disadvantage": "Disadvantage"
+    },
+    "Duality": {
+      "hope": "With Hope",
+      "fear": "With Fear",
+      "critical": "Critical"
+    }
+  }
+}
