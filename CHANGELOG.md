@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 (unreleased)
+## 0.1.0 – 2026-11-18
 
 - **Hidden hand**: GM-only toggle in the token controls. While on, every roll waits for the GM, who sees the
   real result (pre-filled) and may change each die before it is used; Enter confirms.
